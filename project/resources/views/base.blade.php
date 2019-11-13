@@ -10,16 +10,26 @@
 </head>
 <body>
     <header>
-        <div class="bg-info text-white p-5 m-5 ">
-            <a href="{{route('posts.index')}}" class="btn btn-primary">Home</a>
-            <a href="{{route('posts.create')}}" class="btn btn-secondary">Create One!</a>
+        <div class="bg-dark text-white p-5 ">
+            <a href="{{route('posts.index')}}" class="text-white bold">TO Do List
+            </a>
+            @auth
+                <form class="float-right" action="{{route('logout')}}" method="post">
+                    @csrf
+                    <span><b>Connection:  </b>{{auth()->user()->name}}</span>
+                    <button class="btn btn-danger">Logout</button>
+                </form>
+            @else
+                <a href="{{route('login')}}" class="btn btn-primary float-right">Login</a>
+            @endauth
         </div>
+
     </header>
     <div class="container">
         @yield('content')
     </div>
     <footer>
-        <div class="bg-dark text-white text-center p-5 m-5">
+        <div class="bg-dark text-white text-center p-5">
             All right reserved Yousef Alsatouf & Ayse Akdede {{date('Y')}}.
         </div>
     </footer>
