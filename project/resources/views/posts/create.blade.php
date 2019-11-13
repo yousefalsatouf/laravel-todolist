@@ -1,7 +1,7 @@
 @extends('base');
 
 @section('content')
-    <h1>Create One!</h1>
+    <h1><b>Create a Post!</b></h1>
     @if($errors->all())
         <div class="alert alert-danger">
             Sorry, missing information!
@@ -21,7 +21,7 @@
             <label for="content">Content</label>
             <textarea class="form-control" name="content" id="content" rows="7" placeholder="Enter Content"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Create now</button>
     </form>
 @endsection
 
