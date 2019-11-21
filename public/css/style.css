@@ -1,5 +1,9 @@
 body {
   background-color: black; }
+  body h1 {
+    color: white; }
+  body .posts {
+    margin: 0.5rem; }
   body .nav-between {
     color: black; }
     body .nav-between .d-flex {
@@ -11,5 +15,19 @@ body {
       font-weight: bolder; }
     body .nav-between .ps-cr {
       margin-top: 1rem; }
+  body .size {
+    background-color: blue;
+    width: 80rem;
+    height: 30rem; }
+    body .size .title {
+      color: black;
+      font-size: 35px;
+      font-weight: 900; }
+    body .size .content {
+      font-size: 18px;
+      font-weight: 400; }
+    body .size .choice {
+      width: 45rem;
+      margin-bottom: 5rem; }
 
 /*# sourceMappingURL=style.css.map */

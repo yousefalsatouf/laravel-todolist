@@ -3,16 +3,17 @@
         <div class="alert alert-danger" v-if="error">
             <p>There was an error, unable to sign in with those credentials.</p>
         </div>
+        <h1>Sing In:</h1>
         <form autocomplete="off" @submit.prevent="login" method="post">
             <div class="form-group">
-                <label for="email">E-mail</label>
+                <label for="email" class="text-primary"><b>E-mail</b></label>
                 <input type="email" id="email" class="form-control" placeholder="user@example.com" v-model="email" required>
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password" class="text-primary"><b>Password</b></label>
                 <input type="password" id="password" class="form-control" v-model="password" required>
             </div>
-            <button type="submit" class="btn btn-default">Sign in</button>
+            <button type="submit" class="btn btn-default btn-primary">Sign in</button>
         </form>
     </div>
 </template>

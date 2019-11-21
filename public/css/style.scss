@@ -1,6 +1,14 @@
 body
 {
     background-color: black;
+    h1
+    {
+        color: white;
+    }
+    .posts
+    {
+        margin: 0.5rem;
+    }
     .nav-between
     {
         color: black;
@@ -20,6 +28,28 @@ body
         .ps-cr
         {
             margin-top: 1rem;
+        }
+    }
+    .size
+    {
+        background-color: blue;
+        width: 80rem;
+        height: 30rem;
+        .title
+        {
+            color: black;
+            font-size: 35px;
+            font-weight: 900;
+        }
+        .content
+        {
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .choice
+        {
+            width: 45rem;
+            margin-bottom: 5rem;
         }
     }
 }

@@ -3238,6 +3238,41 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -3255,13 +3290,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -3345,6 +3373,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -3387,6 +3416,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -39573,7 +39603,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", {}, [
     _c("h1", [_vm._v("Create A Post")]),
     _vm._v(" "),
     _c(
@@ -39590,7 +39620,7 @@ var render = function() {
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-md-6" }, [
             _c("div", { staticClass: "form-group" }, [
-              _c("label", [_vm._v("Post Title:")]),
+              _vm._m(0),
               _vm._v(" "),
               _c("input", {
                 directives: [
@@ -39620,7 +39650,7 @@ var render = function() {
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-md-6" }, [
             _c("div", { staticClass: "form-group" }, [
-              _c("label", [_vm._v("Post Body:")]),
+              _vm._m(1),
               _vm._v(" "),
               _c("textarea", {
                 directives: [
@@ -39648,12 +39678,28 @@ var render = function() {
         ]),
         _c("br"),
         _vm._v(" "),
-        _vm._m(0)
+        _vm._m(2)
       ]
     )
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { staticClass: "text-primary" }, [
+      _c("b", [_vm._v("Post Title:")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { staticClass: "text-primary" }, [
+      _c("b", [_vm._v("Post Body:")])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -39725,7 +39771,7 @@ var render = function() {
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-md-6" }, [
             _c("div", { staticClass: "form-group" }, [
-              _c("label", [_vm._v("Post Title:")]),
+              _vm._m(0),
               _vm._v(" "),
               _c("input", {
                 directives: [
@@ -39755,7 +39801,7 @@ var render = function() {
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-md-6" }, [
             _c("div", { staticClass: "form-group" }, [
-              _c("label", [_vm._v("Post Body:")]),
+              _vm._m(1),
               _vm._v(" "),
               _c("textarea", {
                 directives: [
@@ -39783,12 +39829,28 @@ var render = function() {
         ]),
         _c("br"),
         _vm._v(" "),
-        _vm._m(0)
+        _vm._m(2)
       ]
     )
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { staticClass: "text-primary" }, [
+      _c("b", [_vm._v("Post Title:")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { staticClass: "text-primary" }, [
+      _c("b", [_vm._v("Post Body:")])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -39826,14 +39888,146 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row justify-content-center" }, [
-      _c("div", { staticClass: "col-md-8" }, [
-        _c("div", { staticClass: "card card-default" }, [
-          _c("div", { staticClass: "card-header" }, [_vm._v("To DO List ")]),
+    return _c("div", { staticClass: "bd-example" }, [
+      _c(
+        "div",
+        {
+          staticClass: "carousel slide",
+          attrs: { id: "carouselExampleCaptions", "data-ride": "carousel" }
+        },
+        [
+          _c("ol", { staticClass: "carousel-indicators" }, [
+            _c("li", {
+              staticClass: "active",
+              attrs: {
+                "data-target": "#carouselExampleCaptions",
+                "data-slide-to": "0"
+              }
+            }),
+            _vm._v(" "),
+            _c("li", {
+              attrs: {
+                "data-target": "#carouselExampleCaptions",
+                "data-slide-to": "1"
+              }
+            }),
+            _vm._v(" "),
+            _c("li", {
+              attrs: {
+                "data-target": "#carouselExampleCaptions",
+                "data-slide-to": "2"
+              }
+            }),
+            _vm._v(" "),
+            _c("li", {
+              attrs: {
+                "data-target": "#carouselExampleCaptions",
+                "data-slide-to": "3"
+              }
+            })
+          ]),
           _vm._v(" "),
-          _c("div", { staticClass: "card-body" })
-        ])
-      ])
+          _c("div", { staticClass: "carousel-inner" }, [
+            _c("div", { staticClass: "carousel-item active size" }, [
+              _c(
+                "div",
+                { staticClass: "carousel-caption d-none d-md-block choice" },
+                [
+                  _c("h5", { staticClass: "title" }, [
+                    _vm._v("Welcome TO Do List ")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "content" }, [
+                    _vm._v("Here is the home page, you can do the next ...")
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "carousel-item size" }, [
+              _c(
+                "div",
+                { staticClass: "carousel-caption d-none d-md-block choice" },
+                [
+                  _c("h5", { staticClass: "title" }, [_vm._v("Add posts")]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "content" }, [
+                    _vm._v("you can add posts as you want ...")
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "carousel-item size" }, [
+              _c(
+                "div",
+                { staticClass: "carousel-caption d-none d-md-block choice" },
+                [
+                  _c("h5", { staticClass: "title" }, [_vm._v("Update posts ")]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "content" }, [
+                    _vm._v("You can update your post ...")
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "carousel-item size" }, [
+              _c(
+                "div",
+                { staticClass: "carousel-caption d-none d-md-block choice" },
+                [
+                  _c("h5", { staticClass: "title" }, [_vm._v("Delete post  ")]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "content" }, [
+                    _vm._v("you can delete your post")
+                  ])
+                ]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "carousel-control-prev",
+              attrs: {
+                href: "#carouselExampleCaptions",
+                role: "button",
+                "data-slide": "prev"
+              }
+            },
+            [
+              _c("span", {
+                staticClass: "carousel-control-prev-icon",
+                attrs: { "aria-hidden": "true" }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "carousel-control-next",
+              attrs: {
+                href: "#carouselExampleCaptions",
+                role: "button",
+                "data-slide": "next"
+              }
+            },
+            [
+              _c("span", {
+                staticClass: "carousel-control-next-icon",
+                attrs: { "aria-hidden": "true" }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+            ]
+          )
+        ]
+      )
     ])
   }
 ]
@@ -39859,7 +40053,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h1", [_vm._v("Posts")]),
+    _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-md-10" }),
@@ -39882,54 +40076,62 @@ var render = function() {
     ]),
     _c("br"),
     _vm._v(" "),
-    _c("table", { staticClass: "table table-hover" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _c(
-        "tbody",
-        _vm._l(_vm.posts, function(post) {
-          return _c("tr", { key: post.id }, [
-            _c("td", [_vm._v(_vm._s(post.id))]),
+    _c(
+      "div",
+      { staticClass: "d-flex flex-wrap" },
+      _vm._l(_vm.posts, function(post) {
+        return _c(
+          "div",
+          {
+            key: post.id,
+            staticClass: "card text-white bg-primary mb-3 posts",
+            staticStyle: { "max-width": "18rem" }
+          },
+          [
+            _vm._m(1, true),
             _vm._v(" "),
-            _c("td", [_vm._v(_vm._s(post.title))]),
-            _vm._v(" "),
-            _c("td", [_vm._v(_vm._s(post.body))]),
+            _c("div", { staticClass: "card-body text-center" }, [
+              _c("h4", { staticClass: "card-title" }, [
+                _c("b", [_vm._v(_vm._s(post.title))])
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "card-text" }, [_vm._v(_vm._s(post.body))])
+            ]),
             _vm._v(" "),
             _c(
-              "td",
+              "div",
+              { staticClass: "btn" },
               [
                 _c(
                   "router-link",
                   {
-                    staticClass: "btn btn-primary",
+                    staticClass: "btn btn-secondary",
                     attrs: { to: { name: "edit", params: { id: post.id } } }
                   },
                   [_vm._v("Edit")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-danger",
+                    on: {
+                      click: function($event) {
+                        $event.preventDefault()
+                        return _vm.deletePost(post.id)
+                      }
+                    }
+                  },
+                  [_vm._v("Delete")]
                 )
               ],
               1
-            ),
-            _vm._v(" "),
-            _c("td", [
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-danger",
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.deletePost(post.id)
-                    }
-                  }
-                },
-                [_vm._v("Delete")]
-              )
-            ])
-          ])
-        }),
-        0
-      )
-    ])
+            )
+          ]
+        )
+      }),
+      0
+    )
   ])
 }
 var staticRenderFns = [
@@ -39937,16 +40139,14 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", [_vm._v("ID")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Item Name")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Item Content")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Actions")])
-      ])
+    return _c("h1", [_c("b", [_vm._v("Posts")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h2", { staticClass: "card-header" }, [
+      _c("b", [_vm._v("List Of Posts : ")])
     ])
   }
 ]
@@ -39982,6 +40182,8 @@ var render = function() {
         ])
       : _vm._e(),
     _vm._v(" "),
+    _c("h1", [_vm._v("Sing In:")]),
+    _vm._v(" "),
     _c(
       "form",
       {
@@ -39995,7 +40197,7 @@ var render = function() {
       },
       [
         _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "email" } }, [_vm._v("E-mail")]),
+          _vm._m(0),
           _vm._v(" "),
           _c("input", {
             directives: [
@@ -40026,7 +40228,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "password" } }, [_vm._v("Password")]),
+          _vm._m(1),
           _vm._v(" "),
           _c("input", {
             directives: [
@@ -40053,14 +40255,38 @@ var render = function() {
         _vm._v(" "),
         _c(
           "button",
-          { staticClass: "btn btn-default", attrs: { type: "submit" } },
+          {
+            staticClass: "btn btn-default btn-primary",
+            attrs: { type: "submit" }
+          },
           [_vm._v("Sign in")]
         )
       ]
     )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      { staticClass: "text-primary", attrs: { for: "email" } },
+      [_c("b", [_vm._v("E-mail")])]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      { staticClass: "text-primary", attrs: { for: "password" } },
+      [_c("b", [_vm._v("Password")])]
+    )
+  }
+]
 render._withStripped = true
 
 
@@ -40106,6 +40332,8 @@ var render = function() {
         ])
       : _vm._e(),
     _vm._v(" "),
+    _c("h1", [_vm._v("Sing Up:")]),
+    _vm._v(" "),
     !_vm.success
       ? _c(
           "form",
@@ -40126,7 +40354,7 @@ var render = function() {
                 class: { "has-error": _vm.error && _vm.errors.name }
               },
               [
-                _c("label", { attrs: { for: "name" } }, [_vm._v("Name")]),
+                _vm._m(0),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -40165,7 +40393,7 @@ var render = function() {
                 class: { "has-error": _vm.error && _vm.errors.email }
               },
               [
-                _c("label", { attrs: { for: "email" } }, [_vm._v("E-mail")]),
+                _vm._m(1),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -40209,9 +40437,7 @@ var render = function() {
                 class: { "has-error": _vm.error && _vm.errors.password }
               },
               [
-                _c("label", { attrs: { for: "password" } }, [
-                  _vm._v("Password")
-                ]),
+                _vm._m(2),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -40245,15 +40471,49 @@ var render = function() {
             _vm._v(" "),
             _c(
               "button",
-              { staticClass: "btn btn-default", attrs: { type: "submit" } },
-              [_vm._v("Submit")]
+              {
+                staticClass: "btn btn-default btn-primary",
+                attrs: { type: "submit" }
+              },
+              [_vm._v("Register")]
             )
           ]
         )
       : _vm._e()
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      { staticClass: "text-primary", attrs: { for: "name" } },
+      [_c("b", [_vm._v("Name")])]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      { staticClass: "text-primary", attrs: { for: "email" } },
+      [_c("b", [_vm._v("E-mail")])]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      { staticClass: "text-primary", attrs: { for: "password" } },
+      [_c("b", [_vm._v("Password")])]
+    )
+  }
+]
 render._withStripped = true
 
 
