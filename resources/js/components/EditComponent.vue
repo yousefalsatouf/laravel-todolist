@@ -36,14 +36,14 @@
             }
         },
         created() {
-            let uri = `http://127.0.0.1:8000/api/post/edit/${this.$route.params.id}`;
+            let uri = `http://shrouded-beach-95835.herokuapp.com/api/post/edit/${this.$route.params.id}`;
             this.axios.get(uri).then((response) => {
                 this.post = response.data;
             });
         },
         methods: {
             updatePost() {
-                let uri = `http://127.0.0.1:8000/api/post/update/${this.$route.params.id}`;
+                let uri = `http://shrouded-beach-95835.herokuapp.com/api/post/update/${this.$route.params.id}`;
                 this.axios.post(uri, this.post).then((response) => {
                     this.$router.push({name: 'posts'});
                 });

@@ -41,7 +41,7 @@
         methods: {
             deletePost(id)
             {
-                let uri = `http://127.0.0.1:8000/api/post/delete/${id}`;
+                let uri = `http://shrouded-beach-95835.herokuapp.com/api/post/delete/${id}`;
                 this.axios.delete(uri).then(response => {
                     this.posts.splice(this.posts.indexOf(id), 1);
                 });

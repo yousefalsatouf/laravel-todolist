@@ -3116,7 +3116,7 @@ __webpack_require__.r(__webpack_exports__);
     addPost: function addPost() {
       var _this = this;
 
-      var uri = 'http://127.0.0.1:8000/api/post/create';
+      var uri = 'http://shrouded-beach-95835.herokuapp.com/api/post/create';
       this.axios.post(uri, this.post).then(function (response) {
         _this.$router.push({
           name: 'posts'
@@ -3194,7 +3194,7 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    var uri = "http://127.0.0.1:8000/api/post/edit/".concat(this.$route.params.id);
+    var uri = "http://shrouded-beach-95835.herokuapp.com/api/post/edit/".concat(this.$route.params.id);
     this.axios.get(uri).then(function (response) {
       _this.post = response.data;
     });
@@ -3203,7 +3203,7 @@ __webpack_require__.r(__webpack_exports__);
     updatePost: function updatePost() {
       var _this2 = this;
 
-      var uri = "http://127.0.0.1:8000/api/post/update/".concat(this.$route.params.id);
+      var uri = "http://shrouded-beach-95835.herokuapp.com/api/post/update/".concat(this.$route.params.id);
       this.axios.post(uri, this.post).then(function (response) {
         _this2.$router.push({
           name: 'posts'
@@ -3335,7 +3335,7 @@ __webpack_require__.r(__webpack_exports__);
     deletePost: function deletePost(id) {
       var _this2 = this;
 
-      var uri = "http://127.0.0.1:8000/api/post/delete/".concat(id);
+      var uri = "http://shrouded-beach-95835.herokuapp.com/api/post/delete/".concat(id);
       this.axios["delete"](uri).then(function (response) {
         _this2.posts.splice(_this2.posts.indexOf(id), 1);
       });
@@ -55672,7 +55672,7 @@ Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]);
 Vue.use(vue_axios__WEBPACK_IMPORTED_MODULE_1___default.a, axios__WEBPACK_IMPORTED_MODULE_2___default.a);
 Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]);
 Vue.use(vue_axios__WEBPACK_IMPORTED_MODULE_1___default.a, axios__WEBPACK_IMPORTED_MODULE_2___default.a);
-axios__WEBPACK_IMPORTED_MODULE_2___default.a.defaults.baseURL = 'http://127.0.0.1:8000/api';
+axios__WEBPACK_IMPORTED_MODULE_2___default.a.defaults.baseURL = 'http://shrouded-beach-95835.herokuapp.com/api';
 
 
 
