@@ -1,0 +1,25 @@
+body
+{
+    background-color: black;
+    .nav-between
+    {
+        color: black;
+        .d-flex
+        {
+            justify-content: center;
+        }
+        .logo
+        {
+            max-width: 5rem;
+        }
+        .text-info
+        {
+            font-size: 21px;
+            font-weight: bolder;
+        }
+        .ps-cr
+        {
+            margin-top: 1rem;
+        }
+    }
+}

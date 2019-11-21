@@ -1,0 +1,15 @@
+body {
+  background-color: black; }
+  body .nav-between {
+    color: black; }
+    body .nav-between .d-flex {
+      justify-content: center; }
+    body .nav-between .logo {
+      max-width: 5rem; }
+    body .nav-between .text-info {
+      font-size: 21px;
+      font-weight: bolder; }
+    body .nav-between .ps-cr {
+      margin-top: 1rem; }
+
+/*# sourceMappingURL=style.css.map */

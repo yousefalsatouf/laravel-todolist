@@ -3059,6 +3059,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -39410,91 +39415,133 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("nav", { staticClass: "navbar navbar-expand-sm bg-dark navbar-dark" }, [
-      _c("ul", { staticClass: "navbar-nav" }, [
-        _c(
-          "li",
-          { staticClass: "nav-item" },
-          [
-            _c("router-link", { staticClass: "nav-link", attrs: { to: "/" } }, [
-              _vm._v("Home")
-            ])
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "li",
-          { staticClass: "nav-item" },
-          [
-            _c(
-              "router-link",
-              { staticClass: "nav-link", attrs: { to: "/posts" } },
-              [_vm._v("Posts")]
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "li",
-          { staticClass: "nav-item" },
-          [
-            _c(
-              "router-link",
-              { staticClass: "nav-link", attrs: { to: "/create" } },
-              [_vm._v("Create Post")]
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "li",
-          { staticClass: "nav-item" },
-          [
-            _c(
-              "router-link",
-              { staticClass: "nav-link", attrs: { to: { name: "login" } } },
-              [_vm._v("Login")]
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "li",
-          { staticClass: "nav-item" },
-          [
-            _c(
-              "router-link",
-              { staticClass: "nav-link", attrs: { to: { name: "register" } } },
-              [_vm._v("Register")]
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _vm.$auth.check()
-          ? _c("li", { staticClass: "pull-right" }, [
+    _c("div", { staticClass: "cont-navbar col-lg-12" }, [
+      _c(
+        "nav",
+        {
+          staticClass:
+            "navbar navbar-expand-sm bg-light navbar-dark nav-between"
+        },
+        [
+          _c(
+            "ul",
+            { staticClass: "navbar-nav nav text-info col-lg-6 d-flex" },
+            [
               _c(
-                "a",
-                {
-                  attrs: { href: "#" },
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.$auth.logout()
-                    }
-                  }
-                },
-                [_vm._v("Logout")]
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c(
+                    "router-link",
+                    { staticClass: "nav-link", attrs: { to: "/" } },
+                    [
+                      _c("img", {
+                        staticClass: "logo",
+                        attrs: {
+                          src: "/logo/logo-todolist.jpg",
+                          alt: "todolist-logo"
+                        }
+                      })
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "nav-item ps-cr" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-link text-info",
+                      attrs: { to: "/posts" }
+                    },
+                    [_vm._v("Posts")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "nav-item ps-cr" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-link text-info",
+                      attrs: { to: "/create" }
+                    },
+                    [_vm._v("Create Post")]
+                  )
+                ],
+                1
               )
-            ])
-          : _vm._e()
-      ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "ul",
+            { staticClass: "navbar-nav nav text-info col-lg-6 d-flex" },
+            [
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-link text-info",
+                      attrs: { to: { name: "login" } }
+                    },
+                    [_vm._v("Login")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-link text-info",
+                      attrs: { to: { name: "register" } }
+                    },
+                    [_vm._v("Register")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm.$auth.check()
+                ? _c("li", { staticClass: "pull-right" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "text-info",
+                        attrs: { href: "#" },
+                        on: {
+                          click: function($event) {
+                            $event.preventDefault()
+                            return _vm.$auth.logout()
+                          }
+                        }
+                      },
+                      [_vm._v("Logout")]
+                    )
+                  ])
+                : _vm._e()
+            ]
+          )
+        ]
+      ),
+      _c("br")
     ]),
-    _c("br"),
     _vm._v(" "),
     _c(
       "div",
@@ -55967,8 +56014,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\BeCode-Training\laravel-vuejs-CRUD\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\BeCode-Training\laravel-vuejs-CRUD\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\BeCode-Training\laravel-todolist\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\BeCode-Training\laravel-todolist\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
