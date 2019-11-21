@@ -1,106 +1,53 @@
 <?php
 
+// PostController.php
+
 namespace App\Http\Controllers;
 
-use App\Post;
 use Illuminate\Http\Request;
+use App\Http\Resources\PostCollection;
+use App\Post;
 
 class PostController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth')->except(['index']);
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        $posts = Post::orderBy('id', 'DESC')->paginate(6);
-
-        return view('posts.index', ['posts' => $posts]);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        return view('posts.create');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-       $this->validate($request, [
-           'title' => 'required|min:5',
-            'content' => 'required|min:5'
-        ]);
-        Post::create([
-            'title' => $request->title,
-            'content' => $request->content,
+        $post = new Post([
+            'title' => $request->get('title'),
+            'body' => $request->get('body')
         ]);
 
-        return redirect(route('posts.index'));
+        $post->save();
+
+        return response()->json('successfully added');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Post $post)
+    public function index()
     {
-        return view('posts.show ', ['post' => $post]);
+        return new PostCollection(Post::all());
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Post $post)
+    public function edit($id)
     {
-        return view('posts.edit', compact('post'));
+        $post = Post::find($id);
+        return response()->json($post);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Post $post)
+    public function update($id, Request $request)
     {
-        $post-> title = $request->title;
-        $post-> content = $request->content;
-        $post-> save();
-        session()->flash('message', 'Successfully Updated !');
-        return redirect()->back();
+        $post = Post::find($id);
+
+        $post->update($request->all());
+
+        return response()->json('successfully updated');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Post $post)
+    public function delete($id)
     {
+        $post = Post::find($id);
+
         $post->delete();
-        return redirect(route('posts.index'));
+
+        return response()->json('successfully deleted');
     }
 }
