@@ -14,7 +14,7 @@ import App from './App.vue';
 Vue.use(VueAxios, axios);
 Vue.use(VueRouter);
 Vue.use(VueAxios, axios);
-axios.defaults.baseURL = 'http://127.0.0.1:8000/api';
+axios.defaults.baseURL = 'https://todolist-laravel-vuejs.herokuapp.com/api';
 
 import HomeComponent from './components/HomeComponent.vue';
 import CreateComponent from './components/CreateComponent.vue';

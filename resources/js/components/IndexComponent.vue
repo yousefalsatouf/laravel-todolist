@@ -33,7 +33,7 @@
             }
         },
         created() {
-            let uri = 'http://127.0.0.1:8000/api/posts';
+            let uri = 'https://todolist-laravel-vuejs.herokuapp.com/api/posts';
             this.axios.get(uri).then(response => {
                 this.posts = response.data.data;
             });
@@ -41,7 +41,7 @@
         methods: {
             deletePost(id)
             {
-                let uri = `http://127.0.0.1:8000/api/post/delete/${id}`;
+                let uri = `https://todolist-laravel-vuejs.herokuapp.com/api/post/delete/${id}`;
                 this.axios.delete(uri).then(response => {
                     this.posts.splice(this.posts.indexOf(id), 1);
                 });
